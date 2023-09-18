@@ -51,6 +51,13 @@
 			<artifactId>tess4j</artifactId>
 			<version>4.5.1</version> <!-- Use the latest version -->
 		</dependency>
+		<dependency>
+			<groupId>com.azure.spring</groupId>
+			<artifactId>spring-cloud-azure-dependencies</artifactId>
+			<version>4.11.0</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
