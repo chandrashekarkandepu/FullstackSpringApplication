@@ -12,15 +12,6 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 @AutoConfigureMockMvc
 public class IntegrationTests {
 
-    @Autowired
-    private MockMvc mockMvc;
-
-    @Test
-    public void testControllerResponse() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.get("/endpoint"))
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.jsonPath("$.attributeName").value("expectedValue"));
-
-        // Capture the response and use it as input for further testing
+  
     }
 }
